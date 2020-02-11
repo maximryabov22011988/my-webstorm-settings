@@ -22,6 +22,10 @@
           <option name="url" value="git@github.com:maximryabov22011988/webpack-broker.git" />
           <option name="userName" value="" />
         </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="git@github.com:maximryabov22011988/start-react-redux-app.git" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
       </list>
     </option>
     <option name="cloneParentDir" value="F:\Projects" />
