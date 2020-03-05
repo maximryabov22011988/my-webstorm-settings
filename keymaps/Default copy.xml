@@ -1,19 +1,14 @@
 <keymap version="1" name="Default copy" parent="$default">
-  <action id="ActivateDebugToolWindow" />
-  <action id="ActivateDuplicatesToolWindow">
-    <keyboard-shortcut first-keystroke="alt 9" />
+  <action id="$LRU">
+    <keyboard-shortcut first-keystroke="shift ctrl alt o" />
   </action>
+  <action id="ActivateDebugToolWindow" />
   <action id="ActivateFavoritesToolWindow">
     <keyboard-shortcut first-keystroke="alt 5" />
   </action>
-  <action id="ActivateFindToolWindow">
-    <keyboard-shortcut first-keystroke="alt 7" />
-  </action>
+  <action id="ActivateFindToolWindow" />
   <action id="ActivateRunToolWindow">
     <keyboard-shortcut first-keystroke="alt 8" />
-  </action>
-  <action id="ActivateStructureToolWindow">
-    <keyboard-shortcut first-keystroke="alt 6" />
   </action>
   <action id="ActivateTODOToolWindow">
     <keyboard-shortcut first-keystroke="alt 4" />
@@ -43,10 +38,9 @@
     <keyboard-shortcut first-keystroke="ctrl f4" />
     <keyboard-shortcut first-keystroke="alt w" />
   </action>
-  <action id="CloseProject">
-    <keyboard-shortcut first-keystroke="shift ctrl alt w" />
+  <action id="Editor LRU">
+    <keyboard-shortcut first-keystroke="shift ctrl alt o" />
   </action>
-  <action id="DumpLookupElementWeights" />
   <action id="Git.Branches">
     <keyboard-shortcut first-keystroke="alt b" />
   </action>
@@ -67,21 +61,12 @@
     <keyboard-shortcut first-keystroke="shift escape" />
     <keyboard-shortcut first-keystroke="escape" />
   </action>
-  <action id="LocalHistory.ShowHistory">
-    <keyboard-shortcut first-keystroke="shift alt h" />
-  </action>
-  <action id="ManageRecentProjects">
-    <keyboard-shortcut first-keystroke="shift ctrl alt o" />
-  </action>
   <action id="NewElement">
     <keyboard-shortcut first-keystroke="alt insert" />
     <keyboard-shortcut first-keystroke="alt f" />
   </action>
   <action id="OpenFile">
     <keyboard-shortcut first-keystroke="ctrl o" />
-  </action>
-  <action id="RenameFile">
-    <keyboard-shortcut first-keystroke="shift ctrl alt r" />
   </action>
   <action id="Scratch.NewScratch" />
   <action id="Scratch.OpenDefaultScratch" />
@@ -104,6 +89,7 @@
   <action id="ToggleFullScreen">
     <keyboard-shortcut first-keystroke="f12" />
   </action>
+  <action id="Vcs.QuickListPopupAction" />
   <action id="Vcs.ShowTabbedFileHistory">
     <keyboard-shortcut first-keystroke="alt h" />
   </action>

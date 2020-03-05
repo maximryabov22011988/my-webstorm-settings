@@ -1,0 +1,134 @@
+<templateSet group="React">
+  <template name="pta" value="PropTypes.array," description="Array prop type" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="ptao" value="PropTypes.arrayOf($END$)," description="An array of a certain type" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="ptaor" value="PropTypes.arrayOf($END$).isRequired," description="An array of a certain type required" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="ptar" value="PropTypes.array.isRequired," description="Array prop type required" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="ptb" value="PropTypes.bool," description="Bool prop type" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="ptbr" value="PropTypes.bool.isRequired," description="Bool prop type required" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="ptel" value="PropTypes.element," description="React element prop type" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="ptelr" value="PropTypes.element.isRequired," description="React element prop type required" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="ptf" value="PropTypes.func," description="Func prop type" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="ptfr" value="PropTypes.func.isRequired," description="Func prop type required" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="pti" value="PropTypes.instanceOf($END$)," description="Is an instance of a class prop type" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="ptir" value="PropTypes.instanceOf($END$).isRequired," description="Is an instance of a class prop type required" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="ptnd" value="PropTypes.node," description="Anything that can be rendered: numbers, strings, elements or an array" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="ptndr" value="PropTypes.node.isRequired," description="Anything that can be rendered: numbers, strings, elements or an array required" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="ptn" value="PropTypes.number," description="Number prop type" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="ptnr" value="PropTypes.number.isRequired," description="Number prop type required" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="pto" value="PropTypes.object," description="Object prop type" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="ptoo" value="PropTypes.objectOf($END$)," description="An object with property values of a certain type" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="ptoor" value="PropTypes.objectOf($END$).isRequired," description="An object with property values of a certain type required" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="ptor" value="PropTypes.object.isRequired," description="Object prop type required" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="ptet" value="PropTypes.oneOfType([&#10; $END$&#10;])," description="An object that could be one of many types" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="ptetr" value="PropTypes.oneOfType([&#10; $END$&#10;]).isRequired," description="An object that could be one of many types required" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="ptsh" value="PropTypes.shape({&#10; $END$&#10;})," description="An object taking on a particular shape" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="TS_EXPRESSION" value="true" />
+    </context>
+  </template>
+  <template name="pts" value="PropTypes.string," description="String prop type" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="rrc" value="import React, { Component } from 'react';&#10;import { connect } from 'react-redux';&#10;&#10;function mapStateToProps(state) {&#10; return {&#10;&#10; };&#10;}&#10;&#10;class $TM_FILENAME_BASE$ extends Component {&#10; render() {&#10;  return (&#10;   &lt;div&gt;&#10;    $END$&#10;   &lt;/div&gt;&#10;  );&#10; }&#10;}&#10;&#10;export default connect(&#10; mapStateToProps,&#10;)($TM_FILENAME_BASE$);" description="Creates a React component class connected to redux" toReformat="true" toShortenFQNames="true">
+    <variable name="TM_FILENAME_BASE" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="scu" value="shouldComponentUpdate(nextProps, nextState) {&#10; $END$&#10;}&#10;" description="Invoked before rendering when new props or state are being received." toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+</templateSet>
