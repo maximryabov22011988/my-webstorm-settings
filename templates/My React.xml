@@ -1,0 +1,594 @@
+<templateSet group="My React">
+  <template name="ir" value="import React from 'react';&#10;" description="My: import React" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="props" value="this.props" description="My: props -&gt; this.props" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="st" value="this.state" description="My: st -&gt; this.state" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="sst" value="this.setState({&#10;  $END$&#10;})&#10;" description="My: set state" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="rend" value="&#10;render() {&#10;  return (&#10;    $END$&#10;  );&#10;}&#10;" description="My: render method" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="rmeth" value="$method_name$ = () =&gt; {&#10;  $END$&#10;};" description="My: create component method" toReformat="true" toShortenFQNames="true">
+    <variable name="method_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="meth" value="$method_name$() {&#10;  $END$&#10;}" description="My: create component method" toReformat="true" toShortenFQNames="true">
+    <variable name="method_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="af" value="($args$) =&gt; {$END$}" description="My: Create arrow function" toReformat="true" toShortenFQNames="true">
+    <variable name="args" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="mstp" value="&#10;const mapStateToProps = (state, props) =&gt; ({&#10;  $END$&#10;});" description="My: create function mapStateToProps" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="mdtp" value="&#10;const mapDispatchToProps = (dispatch) =&gt; ({&#10;  $END$&#10;});" description="My: create function mapDispatchToProps" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="log" value="&#10;console.log('%c Debugger', 'padding: 0.4rem 3.2rem; background: crimson; font: 0.8rem/1 Arial; color: white;', $END$);&#10;&#10;" description="My: My logger" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="rcFull" value="import React from 'react';&#10;import PropTypes from 'prop-types';&#10;&#10;const propTypes = {};&#10;    &#10;const defaultProps = {};&#10;&#10;class $componentName$ extends React.Component {&#10;    constructor(props) {&#10;      super(props);&#10;      &#10;      this.state={&#10;          $state$  &#10;      };&#10;    }&#10;&#10;    render() {&#10;        return (&#10;            $END$&#10;        );&#10;    }&#10;}&#10;&#10;$componentName$.propTypes = propTypes;&#10;$componentName$.defaultProps = defaultProps;&#10;&#10;export default $componentName$;&#10;" description="Creates a React component class with propTypes, defaultProps  and ES6 module system" toReformat="true" toShortenFQNames="true">
+    <variable name="componentName" expression="" defaultValue="&quot;MyComponent&quot;" alwaysStopAt="true" />
+    <variable name="state" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="cons" value="&#10;constructor(props) {&#10;    super(props);&#10;    &#10;    this.state={&#10;        $END$ &#10;    }&#10;}&#10;" description="My: Add constructor" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="rscFull" value="import React from 'react';&#10;import PropTypes from 'prop-types';&#10;&#10;const propTypes = {&#10;    $END$&#10;};&#10;&#10;const defaultProps = {&#10;    $END$&#10;};&#10;&#10;function $componentName$(props) {&#10;    return (&#10;        $END$&#10;    );&#10;};&#10;&#10;$componentName$.propTypes = propTypes;&#10;$componentName$.defaultProps = defaultProps;&#10;&#10;export default $componentName$;&#10;" description="My: Creates a stateless React component with PropTypes and ES6 module system" toReformat="true" toShortenFQNames="true">
+    <variable name="componentName" expression="" defaultValue="&quot;MyComponent&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="cwm" value="&#10;componentWillMount() {&#10;    $END$;&#10;}&#10;" description="Invoked once, both on the client and server, immediately before the initial rendering occurs" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="cdm" value="&#10;componentDidMount() {&#10;    $END$;&#10;}&#10;" description="Invoked once, only on the client (not on the server), immediately after the initial rendering occurs." toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="cwrp" value="&#10;componentWillReceiveProps(nextProps) {&#10;    $END$;&#10;}&#10;" description="Invoked when a component is receiving new props. This method is not called for the initial render." toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="cwup" value="&#10;componentWillUpdate(nextProps, nextState) {&#10;    $END$;&#10;}&#10;" description="Invoked immediately before rendering when new props or state are being received." toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="cdup" value="&#10;componentDidUpdate(prevProps, prevState) {&#10;    $END$;&#10;}&#10;" description="Invoked immediately after the component's updates are flushed to the DOM." toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="cwun" value="&#10;componentWillUnmount() {&#10;    $END$;&#10;}&#10;" description="Invoked immediately before a component is unmounted from the DOM." toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="ipt" value="import PropTypes from 'prop-types';" description="My: import PropTypes" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="rscMin" value="function $componentName$(props) {&#10;    return (&#10;        $END$&#10;    );&#10;};&#10;" description="My: Creates a stateless React component without propTypes" toReformat="true" toShortenFQNames="true">
+    <variable name="componentName" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="pt" value="const propTypes = {&#10;  $START$: PropTypes.$END$,&#10;};&#10;" description="My: Creates propTypes object" toReformat="true" toShortenFQNames="true">
+    <variable name="START" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="dp" value="const defaultProps = {&#10;  $START$: $END$,&#10;};&#10;" description="My: Creates defaultProps object" toReformat="true" toShortenFQNames="true">
+    <variable name="START" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="scup" value="&#10;shouldComponentUpdate(nextProps, nextState) {&#10;    $END$&#10;}&#10;" description="Invoked before rendering when new props or state are being received." toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="sstf" value="&#10;this.setState((prevState, props) =&gt; { &#10;    return {&#10;        $END$ &#10;    }&#10;});&#10;" description="My: Performs a shallow merge of nextState into current state" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="ptstr" value="PropTypes.string," description="String prop type" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="ptstrr" value="PropTypes.string.isRequired," description="String prop type required" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="ptoof" value="PropTypes.oneOf(['$END$'])," description="Prop type limited to specific values by treating it as an enum" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="ptoofr" value="PropTypes.oneOf(['$END$']).isRequired," description="Prop type limited to specific values by treating it as an enum required" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="ptooft" value="PropTypes.oneOfType([&#10;    $END$&#10;])," description="An object that could be one of many types" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="ptooftr" value="PropTypes.oneOfType([&#10;    $END$&#10;]).isRequired," description="An object that could be one of many types required" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="expd" value="export default $module$;" description="My: export default module" toReformat="true" toShortenFQNames="true">
+    <variable name="module" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="pta" value="PropTypes.array," description="Array prop type" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JS_EXPRESSION" value="false" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="ptar" value="PropTypes.array.isRequired," description="Array prop type required" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="ptb" value="PropTypes.bool," description="Bool prop type" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="ptbr" value="PropTypes.bool.isRequired," description="Bool prop type required" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="ptf" value="PropTypes.func," description="Func prop type" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="ptfr" value="PropTypes.func.isRequired," description="Func prop type required" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="ptn" value="PropTypes.number," description="Number prop type" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="ptnr" value="PropTypes.number.isRequired," description="Number prop type required" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="pto" value="PropTypes.object," description="Object prop type" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="ptor" value="PropTypes.object.isRequired," description="Object prop type required" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="ptnd" value="PropTypes.node," description="Anything that can be rendered: numbers, strings, elements or an array" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="ptndr" value="PropTypes.node.isRequired," description="Anything that can be rendered: numbers, strings, elements or an array required" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="ptel" value="PropTypes.element," description="React element prop type" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="ptelr" value="PropTypes.element.isRequired," description="React element prop type required" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="ptiof" value="PropTypes.instanceOf($END$)," description="Is an instance of a class prop type" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="ptir" value="PropTypes.instanceOf($0$).isRequired," description="Is an instance of a class prop type required" toReformat="false" toShortenFQNames="true">
+    <variable name="0" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="ptaof" value="PropTypes.arrayOf($END$)," description="An array of a certain type" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="ptaofr" value="PropTypes.arrayOf($END$).isRequired," description="An array of a certain type required" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="ptof" value="PropTypes.objectOf($END$)," description="An object with property values of a certain type" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="ptofr" value="PropTypes.objectOf($END$).isRequired," description="An object with property values of a certain type required" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="ptsh" value="PropTypes.shape({&#10;    $END$&#10;})," description="An object taking on a particular shape" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JS_EXPRESSION" value="false" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="ptshr" value="PropTypes.shape({&#10;    $END$&#10;}).isRequired," description="An object taking on a particular shape required" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="hoc" value="function $HOC_PREFIX$(WrappedComponent) {&#10;  function $HOC_NAME$(props) {&#10;    return &lt;WrappedComponent {...props} /&gt;;&#10;  }&#10;&#10;  const wrappedComponentName = WrappedComponent.displayName&#10;    || WrappedComponent.name&#10;    || 'Component';&#10;&#10;  $HOC_NAME$.displayName = `$HOC_PREFIX$(${wrappedComponentName})`;&#10;  return $HOC_NAME$;&#10;}" description="My: Creates a React higher-order component" toReformat="true" toShortenFQNames="true">
+    <variable name="HOC_PREFIX" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="HOC_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="ref" value="ref={(ref) =&gt; { this.$refName$ = ref; }}" description="Creates ref" toReformat="true" toShortenFQNames="true">
+    <variable name="refName" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="caf" value="const $funcName$ = ($args$) =&gt; {&#10;  $END$;&#10;};" description="My: Create arrow function with const" toReformat="true" toShortenFQNames="true">
+    <variable name="funcName" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="args" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="cdc" value="&#10;componentDidCatch(error, info) {&#10; $END$&#10;}&#10;" description="Error boundaries catch errors during rendering, in lifecycle methods, and in constructors of the whole tree below them." toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JS_CLASS" value="true" />
+    </context>
+  </template>
+  <template name="ptoofsh" value="PropTypes.objectOf(PropTypes.shape($END$))," description="An object whose keys are known ahead of time" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JS_EXPRESSION" value="true" />
+    </context>
+  </template>
+  <template name="ptoofshr" value="PropTypes.objectOf(PropTypes.shape($END$)).isRequired," description="An object whose keys are known ahead of time required" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JS_EXPRESSION" value="true" />
+    </context>
+  </template>
+  <template name="rcMin" value="class $componentName$ extends React.Component {&#10;    render() {&#10;        return (&#10;            $END$&#10;        );&#10;    }&#10;}&#10;&#10;&#10;" description="Creates a React component class" toReformat="true" toShortenFQNames="true">
+    <variable name="componentName" expression="" defaultValue="&quot;MyComponent&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="useState" value="const [$state$, set$setState$] = useState($initState$);$END$" description="useState" toReformat="true" toShortenFQNames="true">
+    <variable name="state" expression="" defaultValue="&quot;state&quot;" alwaysStopAt="true" />
+    <variable name="setState" expression="capitalize(state)" defaultValue="" alwaysStopAt="true" />
+    <variable name="initState" expression="" defaultValue="&quot;initState&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="useEffect" value="useEffect(() =&gt; {&#10;  return () =&gt; {&#10;    $effect$&#10;  };&#10;}, [$input$]);&#10;$END$" description="useEffect" toReformat="true" toShortenFQNames="true">
+    <variable name="effect" expression="" defaultValue="&quot;effect&quot;" alwaysStopAt="true" />
+    <variable name="input" expression="" defaultValue="&quot;input&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="useContext" value="const $context$ = useContext($contextValue$);$END$" description="useContext" toReformat="true" toShortenFQNames="true">
+    <variable name="context" expression="" defaultValue="&quot;context&quot;" alwaysStopAt="true" />
+    <variable name="contextValue" expression="" defaultValue="&quot;contextValue&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="useCallback" value="useCallback(&#10;  () =&gt; {&#10;    $callback$&#10;  },&#10;  [$input$],&#10;);&#10;$END$" description="useCallback" toReformat="true" toShortenFQNames="true">
+    <variable name="callback" expression="" defaultValue="&quot;callback&quot;" alwaysStopAt="true" />
+    <variable name="input" expression="" defaultValue="&quot;input&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="useImperativeHandle" value="useImperativeHandle(&#10;  $ref$,&#10;  () =&gt; {&#10;    $handler$&#10;  },&#10;  [$input$],&#10;);&#10;$END$" description="useImperativeHandle" toReformat="true" toShortenFQNames="true">
+    <variable name="ref" expression="" defaultValue="&quot;ref&quot;" alwaysStopAt="true" />
+    <variable name="handler" expression="" defaultValue="&quot;handler&quot;" alwaysStopAt="true" />
+    <variable name="input" expression="" defaultValue="&quot;input&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="useReducer" value="const [state, dispatch] = useReducer($reducer$, $initialState$, $init$);$END$" description="useReducer" toReformat="true" toShortenFQNames="true">
+    <variable name="reducer" expression="" defaultValue="&quot;reducer&quot;" alwaysStopAt="true" />
+    <variable name="initialState" expression="" defaultValue="&quot;initialState&quot;" alwaysStopAt="true" />
+    <variable name="init" expression="" defaultValue="&quot;init&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="useMemo" value="useMemo(() =&gt; $function$, $input$);$END$" description="useMemo" toReformat="true" toShortenFQNames="true">
+    <variable name="function" expression="" defaultValue="&quot;function&quot;" alwaysStopAt="true" />
+    <variable name="input" expression="" defaultValue="&quot;input&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="useRef" value="const $ref$ = useRef($initialValue$);$END$" description="useRef" toReformat="true" toShortenFQNames="true">
+    <variable name="ref" expression="" defaultValue="&quot;ref&quot;" alwaysStopAt="true" />
+    <variable name="initialValue" expression="" defaultValue="&quot;initialValue&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="useLayoutEffect" value="useLayoutEffect(() =&gt; {&#10;  return () =&gt; {&#10;    $effect$&#10;  },&#10;  [$input$]&#10;});&#10;$END$" description="useLayoutEffect" toReformat="true" toShortenFQNames="true">
+    <variable name="effect" expression="" defaultValue="&quot;effect&quot;" alwaysStopAt="true" />
+    <variable name="input" expression="" defaultValue="&quot;input&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="useDebugValue" value="useDebugValue($value$);$END$" description="useDebugValue" toReformat="true" toShortenFQNames="true">
+    <variable name="value" expression="" defaultValue="&quot;value&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="cref" value="this.$refName$Ref = React.createRef();$END$" description="Creates a ref" toReformat="true" toShortenFQNames="true">
+    <variable name="refName" expression="" defaultValue="&quot;refName&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="gdsfp" value="static getDerivedStateFromProps(nextProps, prevState) {&#10; $END$&#10;}&#10;" description="Invoked after a component is instantiated as well as when it receives new props." toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JS_CLASS" value="true" />
+    </context>
+  </template>
+  <template name="gsbu" value="getSnapshotBeforeUpdate(prevProps, prevState) {&#10; $END$&#10;}&#10;" description="Invoked right before the most recently rendered output is committed to e.g. the DOM. It enables your component to capture current values" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JS_CLASS" value="true" />
+    </context>
+  </template>
+  <template name="compDp" value="$Component$.defaultProps = defaultProps;&#10;" description="My: Set defaultProps to Component" toReformat="true" toShortenFQNames="true">
+    <variable name="Component" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="compPt" value="$Component$.propTypes = propTypes;&#10;" description="My: Set propTypes to Component" toReformat="true" toShortenFQNames="true">
+    <variable name="Component" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="pti" value="$START$: PropTypes.$END$," description="Item prop type" toReformat="false" toShortenFQNames="true">
+    <variable name="START" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JS_EXPRESSION" value="false" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="dprops" value="const { $END$ } = this.props;" description="My: Destructuring props" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="dst" value="const { $END$ } = this.state;" description="My: Destructuring state" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="rf" value="&lt;React.Fragment&gt;&#10;  $END$&#10;&lt;/React.Fragment&gt;" description="My: React.Fragment" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="icn" value="import cn from 'classnames';" description="My: import classnames" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="ild" value="import _$func$ from 'lodash/$func$';" description="My: import lodash function" toReformat="true" toShortenFQNames="true">
+    <variable name="func" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="imp" value="import $END$ from '$module$';" description="My: import" toReformat="true" toShortenFQNames="true">
+    <variable name="module" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+</templateSet>
