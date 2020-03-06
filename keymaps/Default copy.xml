@@ -6,10 +6,11 @@
   <action id="ActivateFavoritesToolWindow">
     <keyboard-shortcut first-keystroke="alt 5" />
   </action>
-  <action id="ActivateFindToolWindow" />
-  <action id="ActivateRunToolWindow">
+  <action id="ActivateFindToolWindow">
     <keyboard-shortcut first-keystroke="alt 8" />
   </action>
+  <action id="ActivateRunToolWindow" />
+  <action id="ActivateServicesToolWindow" />
   <action id="ActivateTODOToolWindow">
     <keyboard-shortcut first-keystroke="alt 4" />
   </action>
