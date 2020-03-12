@@ -9,7 +9,9 @@
   <action id="ActivateFindToolWindow">
     <keyboard-shortcut first-keystroke="alt 8" />
   </action>
-  <action id="ActivateRunToolWindow" />
+  <action id="ActivateRunToolWindow">
+    <keyboard-shortcut first-keystroke="alt 8" />
+  </action>
   <action id="ActivateServicesToolWindow" />
   <action id="ActivateTODOToolWindow">
     <keyboard-shortcut first-keystroke="alt 4" />
